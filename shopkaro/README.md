@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# 🛒 ShopKaro – Shopping Cart using React + Context API + useReducer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![React](https://img.shields.io/badge/React-18.2-blue?logo=react)
+![Context API](https://img.shields.io/badge/Context_API-State_Management-purple)
+![Reducer](https://img.shields.io/badge/useReducer-Hooks-orange)
+![License: MIT](https://img.shields.io/badge/License-MIT-green)
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📸 Preview
 
-### `npm start`
+### 🏠 Home Page (with Cart Count)
+![ShopKaro Home](./path-to/419a0edb-1227-483f-8727-94749159d56b.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🛒 Cart Page (with Item Summary)
+![ShopKaro Cart](./path-to/5607206b-ba29-47bc-b345-b9affa602a7c.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> 📝 Update image paths above after hosting or adjust if putting this in your local project.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Project Purpose
 
-### `npm run build`
+**ShopKaro** is a mini e-commerce cart project built as a **learning demo** to understand:
+- 🧠 `useContext` for global state
+- 🌀 `useReducer` for predictable state updates
+- 🛍️ Cart add/remove functionality
+- 🔄 Component re-rendering based on state changes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Project Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+shopkaro/
+├── public/ # Static assets
+├── src/
+│ ├── components/ # Navbar, Cart, Home, ProductCard
+│ ├── context/ # Context & reducer logic
+│ ├── data.js # Product data
+│ ├── App.js # App setup with routing
+│ └── index.js # React root
+├── package.json
+└── README.md
+```
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧠 Concepts Covered
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+| Feature                          | Description |
+|----------------------------------|-------------|
+| ✅ `useContext`                  | Global state sharing across components |
+| ✅ `useReducer`                  | Centralized cart logic (add/remove) |
+| 🧩 Component composition         | Breaking UI into reusable pieces |
+| 🧪 Derived state (`Cart Count`) | Auto updates on state changes |
+| ⚛️ React Router (if used)       | Page navigation |
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠 Technologies Used
 
-## Learn More
+- React 18+
+- useContext + useReducer
+- Basic CSS / Styled Components / Tailwind (based on your setup)
+- React Router DOM (if present)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 💻 Getting Started
 
-### Code Splitting
+### 1. Clone the repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+git clone https://github.com/8057vivek/mern-projects.git
+cd shopkaro
+```
 
-### Analyzing the Bundle Size
+### 2. Install Dependencies  
+```bash
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 3. Run The App  
+```bash
+npm start
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+The app will run at: [http://localhost:3000](http://localhost:3000)
